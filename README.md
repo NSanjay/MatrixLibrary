@@ -14,8 +14,8 @@ The package structure used in the project is:
     ├── tests                   			
     │   	├──com/braincorp/linalglib/matrixmultiplication                # Test source files
     ├── doxygen                   	
-    │   	├── ...								 # dOxygen documentation
-    ├── config_file                   	# dOxygen config file
+    │   	├── ...								# dOxygen documentation
+    ├── config_file                   						# dOxygen config file
     └── ..
   
   The package structure in the include file is
