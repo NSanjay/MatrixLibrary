@@ -1,0 +1,162 @@
+\hypertarget{classMatrix}{}\doxysection{Matrix Class Reference}
+\label{classMatrix}\index{Matrix@{Matrix}}
+
+
+The class represents the the number of columns, and multiply and transpose operations of a matrix.  
+
+
+
+
+{\ttfamily \#include $<$/home/sanjay/\+Projects/\+Matrix\+Library/include/com/braincorp/linalglib/matrixmultiplication/matrixmultiply.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMatrix_a52ddf86580cc32daf04423287c22de19}\label{classMatrix_a52ddf86580cc32daf04423287c22de19}} 
+\mbox{\hyperlink{classMatrix_a52ddf86580cc32daf04423287c22de19}{Matrix}} (int height, int width)
+\begin{DoxyCompactList}\small\item\em A constructor that creates a matrix given its height and width. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMatrix_a2dba13c45127354c9f75ef576f49269b}\label{classMatrix_a2dba13c45127354c9f75ef576f49269b}} 
+\mbox{\hyperlink{classMatrix_a2dba13c45127354c9f75ef576f49269b}{Matrix}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMatrix_a3f51ba6280305f2d692ab754800297fa}{get\+Width}} ()
+\begin{DoxyCompactList}\small\item\em Getter method to retrieve the width (number of columns of a matrix) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMatrix_a3af39c453aeb30c5cb55f72c2e71917f}{get\+Height}} ()
+\begin{DoxyCompactList}\small\item\em Getter method to retrieve the height (number of rows of a matrix) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMatrix_ad315f56cefff70b92a3512861a05a955}{set\+Width}} (int width)
+\begin{DoxyCompactList}\small\item\em Setter method to set the width (number of columns of a matrix) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMatrix_af8cd3c9ab12cd665d3098e7e434d9b5d}{set\+Height}} (int height)
+\begin{DoxyCompactList}\small\item\em Setter method to set the height (number of rows of a matrix) \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \mbox{\hyperlink{classMatrix_a868b67ef7a8b260c0c94af34c8e6ee64}{get\+Matrix}} ()
+\begin{DoxyCompactList}\small\item\em Getter method to get the matrix vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMatrix_ae826611da7e680baa85696021fd93918}{set\+Matrix}} (std\+::vector$<$ float $>$ a\+\_\+mat)
+\begin{DoxyCompactList}\small\item\em Setter method to set the matrix vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMatrix}{Matrix}} \mbox{\hyperlink{classMatrix_ad1812bcc61c02494cbff358cc9b8dddb}{multiply\+Matrix}} (\mbox{\hyperlink{classMatrix}{Matrix}} b)
+\begin{DoxyCompactList}\small\item\em Method to multiply a matrix with another matrix. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMatrix}{Matrix}} \mbox{\hyperlink{classMatrix_ae23f817021383e3c8636a714dcba1d21}{transpose}} ()
+\begin{DoxyCompactList}\small\item\em Method to multiply a matrix with another matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The class represents the the number of columns, and multiply and transpose operations of a matrix. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMatrix_a3af39c453aeb30c5cb55f72c2e71917f}\label{classMatrix_a3af39c453aeb30c5cb55f72c2e71917f}} 
+\index{Matrix@{Matrix}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily int Matrix\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter method to retrieve the height (number of rows of a matrix) 
+
+\begin{DoxyReturn}{Returns}
+the height of the matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMatrix_a868b67ef7a8b260c0c94af34c8e6ee64}\label{classMatrix_a868b67ef7a8b260c0c94af34c8e6ee64}} 
+\index{Matrix@{Matrix}!getMatrix@{getMatrix}}
+\index{getMatrix@{getMatrix}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{getMatrix()}{getMatrix()}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ Matrix\+::get\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter method to get the matrix vector. 
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$float$>$ object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMatrix_a3f51ba6280305f2d692ab754800297fa}\label{classMatrix_a3f51ba6280305f2d692ab754800297fa}} 
+\index{Matrix@{Matrix}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily int Matrix\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter method to retrieve the width (number of columns of a matrix) 
+
+\begin{DoxyReturn}{Returns}
+the width of the matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMatrix_ad1812bcc61c02494cbff358cc9b8dddb}\label{classMatrix_ad1812bcc61c02494cbff358cc9b8dddb}} 
+\index{Matrix@{Matrix}!multiplyMatrix@{multiplyMatrix}}
+\index{multiplyMatrix@{multiplyMatrix}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{multiplyMatrix()}{multiplyMatrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMatrix}{Matrix}} Matrix\+::multiply\+Matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMatrix}{Matrix}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Method to multiply a matrix with another matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & The other matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classMatrix}{Matrix}} denoting the result of the multiplication 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMatrix_af8cd3c9ab12cd665d3098e7e434d9b5d}\label{classMatrix_af8cd3c9ab12cd665d3098e7e434d9b5d}} 
+\index{Matrix@{Matrix}!setHeight@{setHeight}}
+\index{setHeight@{setHeight}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{setHeight()}{setHeight()}}
+{\footnotesize\ttfamily void Matrix\+::set\+Height (\begin{DoxyParamCaption}\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Setter method to set the height (number of rows of a matrix) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & The height of the matrix \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMatrix_ae826611da7e680baa85696021fd93918}\label{classMatrix_ae826611da7e680baa85696021fd93918}} 
+\index{Matrix@{Matrix}!setMatrix@{setMatrix}}
+\index{setMatrix@{setMatrix}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{setMatrix()}{setMatrix()}}
+{\footnotesize\ttfamily void Matrix\+::set\+Matrix (\begin{DoxyParamCaption}\item[{std\+::vector$<$ float $>$}]{a\+\_\+mat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Setter method to set the matrix vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a\+\_\+mat} & The matrix vector Throws an \mbox{\hyperlink{classOutOfBoundsException}{Out\+Of\+Bounds\+Exception}} if size of the vector is not equal to the matrix dimensions. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMatrix_ad315f56cefff70b92a3512861a05a955}\label{classMatrix_ad315f56cefff70b92a3512861a05a955}} 
+\index{Matrix@{Matrix}!setWidth@{setWidth}}
+\index{setWidth@{setWidth}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{setWidth()}{setWidth()}}
+{\footnotesize\ttfamily void Matrix\+::set\+Width (\begin{DoxyParamCaption}\item[{int}]{width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Setter method to set the width (number of columns of a matrix) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The width of the matrix \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMatrix_ae23f817021383e3c8636a714dcba1d21}\label{classMatrix_ae23f817021383e3c8636a714dcba1d21}} 
+\index{Matrix@{Matrix}!transpose@{transpose}}
+\index{transpose@{transpose}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{transpose()}{transpose()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMatrix}{Matrix}} Matrix\+::transpose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Method to multiply a matrix with another matrix. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classMatrix}{Matrix}} denoting the result of the transposition 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/sanjay/\+Projects/\+Matrix\+Library/include/com/braincorp/linalglib/matrixmultiplication/matrixmultiply.\+hpp\end{DoxyCompactItemize}

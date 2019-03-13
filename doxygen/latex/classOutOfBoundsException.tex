@@ -1,0 +1,69 @@
+\hypertarget{classOutOfBoundsException}{}\doxysection{Out\+Of\+Bounds\+Exception Class Reference}
+\label{classOutOfBoundsException}\index{OutOfBoundsException@{OutOfBoundsException}}
+
+
+An exception used if the vector size is not equal to the matrix dimensions.  
+
+
+
+
+{\ttfamily \#include $<$/home/sanjay/\+Projects/\+Matrix\+Library/include/com/braincorp/linalglib/matrixmultiplication/matrixmultiply.\+hpp$>$}
+
+Inheritance diagram for Out\+Of\+Bounds\+Exception\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classOutOfBoundsException}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \mbox{\hyperlink{classOutOfBoundsException_a60a2b44a87c9ba9eefc3ca7dc02d8efc}{what}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Returns error description. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classOutOfBoundsException_afe53e2156120d42028477a5fb6d2d487}{Out\+Of\+Bounds\+Exception}} (const char $\ast$cmessage)
+\begin{DoxyCompactList}\small\item\em Constructs an exception. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classOutOfBoundsException_a10c684b46e156f855474d74ccaecbfbd}\label{classOutOfBoundsException_a10c684b46e156f855474d74ccaecbfbd}} 
+std\+::string \mbox{\hyperlink{classOutOfBoundsException_a10c684b46e156f855474d74ccaecbfbd}{message}}
+\begin{DoxyCompactList}\small\item\em Contains the user message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An exception used if the vector size is not equal to the matrix dimensions. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classOutOfBoundsException_afe53e2156120d42028477a5fb6d2d487}\label{classOutOfBoundsException_afe53e2156120d42028477a5fb6d2d487}} 
+\index{OutOfBoundsException@{OutOfBoundsException}!OutOfBoundsException@{OutOfBoundsException}}
+\index{OutOfBoundsException@{OutOfBoundsException}!OutOfBoundsException@{OutOfBoundsException}}
+\doxysubsubsection{\texorpdfstring{OutOfBoundsException()}{OutOfBoundsException()}}
+{\footnotesize\ttfamily Out\+Of\+Bounds\+Exception\+::\+Out\+Of\+Bounds\+Exception (\begin{DoxyParamCaption}\item[{const char $\ast$}]{cmessage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs an exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmessage} & The error description. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classOutOfBoundsException_a60a2b44a87c9ba9eefc3ca7dc02d8efc}\label{classOutOfBoundsException_a60a2b44a87c9ba9eefc3ca7dc02d8efc}} 
+\index{OutOfBoundsException@{OutOfBoundsException}!what@{what}}
+\index{what@{what}!OutOfBoundsException@{OutOfBoundsException}}
+\doxysubsubsection{\texorpdfstring{what()}{what()}}
+{\footnotesize\ttfamily const char$\ast$ Out\+Of\+Bounds\+Exception\+::what (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [noexcept]}}
+
+
+
+Returns error description. 
+
+behaves like std\+::runtime\+\_\+error\+::what(). 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/sanjay/\+Projects/\+Matrix\+Library/include/com/braincorp/linalglib/matrixmultiplication/matrixmultiply.\+hpp\end{DoxyCompactItemize}
